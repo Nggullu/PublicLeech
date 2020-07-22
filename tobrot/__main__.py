@@ -133,13 +133,13 @@ if __name__ == "__main__" :
     app.add_handler(call_back_button_handler)
     #
     save_thumb_nail_handler = MessageHandler(
-        save_thumb_nail,
+        save,
         filters=Filters.command([Commandi.SAVETHUMBNAIL]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(save_thumb_nail_handler)
     #
     clear_thumb_nail_handler = MessageHandler(
-        clear_thumb_nail,
+        clear,
         filters=Filters.command([Commandi.CLEARTHUMBNAIL]) & Filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(clear_thumb_nail_handler)
